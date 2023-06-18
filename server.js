@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to one piece application." });
+  res.json({ message: "Welcome to One Piece application." });
 });
 
 require("./app/routes/pirate.routes")(app);

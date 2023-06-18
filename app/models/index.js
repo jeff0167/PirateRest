@@ -1,8 +1,8 @@
 const Sequelize = require("sequelize");
 const sequelize = new Sequelize('pirates', 'root', '', {
-    host: "localhost",
-    dialect: "mysql",
-    port: 3306
+  host: "localhost",
+  dialect: "mysql",
+  port: 3306  // 3306 is default, have to match phpMyAdmin localhost address?
 });
 
 const db = {};

@@ -53,7 +53,7 @@ exports.update = (req, res) => {
     const _id = req.params.id;
 
     Pirate.update(req.body, {
-            where: { id: _id }
+            where: { pirate_id: _id }
         })
         .then(num => {
             if (num == 1) {
@@ -71,7 +71,7 @@ exports.delete = (req, res) => {
     const id = req.params.id;
 
     Pirate.destroy({
-            where: { id: id }
+            where: { pirate_id: id }
         })
         .then(num => {
             if (num == 1) {
